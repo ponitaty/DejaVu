@@ -1,4 +1,4 @@
-.settings {
+.friends {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 50px;
@@ -11,13 +11,13 @@
   align-items: bottom;
 }
 
-.settings > div > a {
+.friends > div > a {
   padding: 5px 12px;
   text-align: center;
   text-decoration: none;
 }
 
-.settings > div {
+.friends > div {
   height: 30px;
   line-height: 30px;
   background-color: rgb(183, 246, 212);
@@ -35,13 +35,4 @@
 
 body {
   background-color: rgb(240, 221, 178);
-}
-
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }

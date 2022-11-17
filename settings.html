@@ -8,25 +8,36 @@
 
 <body>
     <h1>Settings</h1>
+    <h2>Account</h2>
 <div class="split left_justified">
         <div class="setting">
-            <div class="setting"><a href="setting.html">Setting</a></div>
             <div class="friends"><a href="friends.html">Friends</a></div>
             <div class="back"><a href="homepage.html">Archive</a></div>
         </div>
     </div>
 </div>
-<div class="split right">
-    <div class="centered">
-        <form> <label for="FName">First name:</label> 
-        <input type="text" id="FName" name="FName" maxlength="30"></form>
-        <form><label for="LName">Last name:</label>
-        <input type="text" id="LName" name="LName" maxlength="30"></form>
-        <form><label for="Email">Email:</label>
-        <input type="text" id="Email" name="Email" maxlength="30"></form>
-        <form><label for="Pass">Password:</label>
-        <input type="text" id="Pass" name="Pass" maxlength="30"></form>
-    </div>
+<div class="centered">
+    <form> <label for="FName">First name:</label> 
+    <input type="text" id="FName" name="FName" maxlength="30"></form>
+    <form><label for="LName">Last name:</label>
+    <input type="text" id="LName" name="LName" maxlength="30"></form>
+    <form><label for="Email">Email:</label>
+    <input type="text" id="Email" name="Email" maxlength="30"></form>
+    Password: <input type="password" value="" id="myInput"><br><br>
+    <input type="checkbox" onclick="myFunction()">Show Password
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+    x.type = "text";
+    } else {
+    x.type = "password";
+    }
+     }
+    </script>
+
+    <button type="submit" value="Submit"> Save </button>
 </div>
 </body>
 

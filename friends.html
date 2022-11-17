@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Settings</title>
-    <link rel="stylesheet" href="settings.css" />
-</head>
-
+  <head>
+    <title>Friends</title>
+    <link rel="stylesheet" href="friends.css" />
+  </head>
 <body>
-    <h1>Settings</h1>
-    <div class="setting">
-        <div class="account"><a href="account.html">Account</a></div>
-        <div class="friends"><a href="friends.html">Account</a></div>
+    <h1>Friends</h1>
+
+    <input type="text" value="http://127.0.0.1:5500/homepage.html" id="myInput">
+    <button onclick="myFunction()">Copy text</button>
+
+    <script>
+    function myFunction() {
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+    }
+    </script>
+    <div class="friends">
+      <div class="archive"><a href="homepage.html">Archive</a></div>
+      <div class="settings"><a href="settings.html">Settings</a></div>
+      <div class="centered">
+        <form>
+        <label for="description">Friends list:</label>
+        <textarea
+          id="description-left"
+          name="paragraph_text"
+          rows="4"
+          cols="50"
+        >
+        </textarea
+        >
+        </form>
+        <button type="submit" value="Submit"> Save </button>
+        </form>
+      </div>
     </div>
 </body>
-
 </html>

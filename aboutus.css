@@ -1,25 +1,28 @@
 h1 {
-    color: rgb(79, 215, 179);
+  color: rgb(79, 215, 179);
 }
 
 h2 {
-    color: rgb(61, 152, 128);
+  color: rgb(61, 152, 128);
 }
 
 p {
-    color: rgb(48, 92, 80);
+  color: rgb(48, 92, 80);
 }
 
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 100px;
-    width: 300px;
-    height: 100px;
-    padding: 0;
-    margin: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 100px;
+  width: 300px;
+  height: 100px;
+  padding: 0;
+  margin: 1;
 
-    justify-content: bottom left;
-    align-items: bottom left;
+  justify-content: bottom left;
+  align-items: bottom left;
 }
 
+body {
+  background-color: rgb(240, 221, 178);
+}
